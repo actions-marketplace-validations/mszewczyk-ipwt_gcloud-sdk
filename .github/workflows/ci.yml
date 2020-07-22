@@ -1,0 +1,13 @@
+name: Build and deploy image
+jobs:
+  build:
+    name: Build image
+    runs-on: ubuntu-latest
+    steps:
+      - name: create variable
+        run: |
+          export SOME_VARIABLE=cokolwiek
+
+      - name: display variable
+        run: |
+          echo $SOME_VARIABLE
