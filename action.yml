@@ -1,0 +1,25 @@
+name: ipwt.pl GCloud SDK
+inputs:
+  command:
+    description: |
+      Place your gcloud command here,
+      the scripting will be performed by bash
+    required: true
+  project_id:
+    description: |
+      The project_id value from json file generated after
+      the project is created
+    required: true
+  json:
+    description: |
+      Base64 json file generated from created project
+    required: true
+
+runs:
+  using: docker
+  image: ipwtpl/gcloud-sdk
+  args:
+    - ${{ inputs.playbook-parameters }}
+  env:
+    PROJECTID: ${{ inputs.project_id }}
+    GCLOUD_JSON_FILE: ${{ inputs.project_id }}
