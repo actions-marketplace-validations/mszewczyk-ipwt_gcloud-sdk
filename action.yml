@@ -1,25 +1,22 @@
 name: ipwt.pl GCloud SDK
+description: |
+  Fully fetched GCloud SDK for any use. The rest is ToDo.
 inputs:
-  command:
-    description: |
-      Place your gcloud command here,
-      the scripting will be performed by bash
-    required: true
-  project_id:
+  project-id:
     description: |
       The project_id value from json file generated after
       the project is created
     required: true
-  json:
+  credentials:
     description: |
       Base64 json file generated from created project
     required: true
+  version:
+    description: |
+      The version of the GCloud SDK
+    default: '302.0.0'
+    required: true
 
 runs:
-  using: docker
-  image: ipwtpl/gcloud-sdk
-  args:
-    - ${{ inputs.playbook-parameters }}
-  env:
-    PROJECTID: ${{ inputs.project_id }}
-    GCLOUD_JSON_FILE: ${{ inputs.project_id }}
+  using: 'node12'
+  main: 'index.js'

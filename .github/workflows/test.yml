@@ -1,0 +1,23 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      # To use this repository's private action,
+      # you must check out the repository
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Engage action
+        uses: ./
+        with:
+          project-id: 'test-id-231954;'
+          credentials: 'eyJ0eXBlIjogImR1cGEiLCJwcm9qZWN0X2lkIjogImFzZGFzZGFkYWRhZGFkYSJ9Cg=='
+          version: '295.0.0'
+      - name: Check GCloud SDK version
+        run: |
+          gcloud version
+          ls -al .gcloudsdk
+          pwd
+          echo "config file path: $CLOUDSDK_CONFIG"
