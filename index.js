@@ -24,14 +24,18 @@ const gcloud_config_dir = `${download_dir}/config`
 
 
 function create_dir(directory) {
-  fs.mkdir(
-    directory,
-    (err) => {
-      if (err) {
-        throw err;
+  if (fs.existsSync(directory)) {
+    return;
+  } else {
+    fs.mkdir(
+      directory,
+      (err) => {
+        if (err) {
+          throw err;
+        }
       }
-    }
-  )
+    )
+  }
 }
 
 function download_gcloud_sdk(version) {
