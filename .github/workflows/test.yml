@@ -14,7 +14,7 @@ jobs:
         with:
           project-id: 'test-id-231954;'
           credentials: 'eyJ0eXBlIjogImR1cGEiLCJwcm9qZWN0X2lkIjogImFzZGFzZGFkYWRhZGFkYSJ9Cg=='
-          version: '295.0.0'
+          version: '308.0.0'
       - name: Check GCloud SDK version
         run: |
           gcloud version

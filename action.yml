@@ -1,12 +1,7 @@
-name: ipwt.pl GCloud SDK
+name: 360codelab GCloud SDK
 description: |
   Fully fetched GCloud SDK for any use. The rest is ToDo.
 inputs:
-  project-id:
-    description: |
-      The project_id value from json file generated after
-      the project is created
-    required: true
   credentials:
     description: |
       Base64 json file generated from created project
