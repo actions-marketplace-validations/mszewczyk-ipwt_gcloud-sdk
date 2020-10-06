@@ -9,7 +9,7 @@ inputs:
   version:
     description: |
       The version of the GCloud SDK
-    default: '308.0.0'
+    default: '312.0.0'
     required: true
 
 runs:

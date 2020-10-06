@@ -21,7 +21,11 @@ const available_versions = [
   '305.0.0',
   '306.0.0',
   '307.0.0',
-  '308.0.0'
+  '308.0.0',
+  '309.0.0',
+  '310.0.0',
+  '311.0.0',
+  '312.0.0'
 ]
 const download_dir = `${__dirname}/.gcloudsdk`
 const download_file = `${download_dir}/gcloud-sdk.tar.gz`
