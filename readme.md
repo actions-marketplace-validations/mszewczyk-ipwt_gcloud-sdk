@@ -42,7 +42,7 @@ In your GitHub workflows add a step with parameters:
 The full list of options:
 
 * `credentials` - this is the base64 content of the service account JSON file.
-* `version` - the version of the gcloud SDK to use, the default is `308.0.0`
+* `version` - the version of the gcloud SDK to use, the default is `312.0.0`
 
 ## Usage
 
