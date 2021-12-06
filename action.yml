@@ -1,4 +1,4 @@
-name: 360codelab GCloud SDK
+name: mszewczyk-ipwt GCloud SDK
 description: |
   Fully fetched GCloud SDK for any use. The rest is ToDo.
 inputs:
@@ -9,7 +9,7 @@ inputs:
   version:
     description: |
       The version of the GCloud SDK
-    default: '345.0.0'
+    default: '365.0.1'
     required: true
 
 runs:

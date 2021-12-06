@@ -34,7 +34,7 @@ In order to use this Gcloud SDK in GitHub actions you need to create GCP Service
 In your GitHub workflows add a step with parameters:
 ```
 - name: install GCloud SDK
-  uses: 360codelab/gcloud-sdk@v1
+  uses: mszewczyk-ipwt/gcloud-sdk@v1
   with:
     credentials: ${{ secrets.GCLOUD_SERVICE_ACCOUNT_PRIVATE_KEY }}
 ```
@@ -42,7 +42,7 @@ In your GitHub workflows add a step with parameters:
 The full list of options:
 
 * `credentials` - this is the base64 content of the service account JSON file.
-* `version` - the version of the gcloud SDK to use, the default is `345.0.0`
+* `version` - the version of the gcloud SDK to use, the default is `365.0.1`
 
 ## Usage
 
